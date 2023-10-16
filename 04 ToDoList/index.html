@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--==========Meta=================-->
+    <meta charset="UTF-8">
+    <!--==========Title================-->
+    <title>ToDo List v2</title>
+    <!--==========Shortcut-icon========-->
+
+    <!--==========JS-functionality=====-->
+    <script src="./js/init.js"              async></script>
+    <script src="./js/form-Handler.js"      async></script>
+    <script src="./js/task.js"              async></script>
+    <script src="./js/task-Handler.js"      async></script>
+    <script src="./js/task-domElement.js"   async></script>
+    <!--==========Stylesheets==========-->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <!--
+    <link rel="stylesheet" href="/css/element.css">
+    <link rel="stylesheet" href="/css/form.css">
+    -->
+    <!--==========BETA-Styles==========-->
+</head>
+<body>
+<section id="main">
+    <div id="main-todo-list">
+        <!--==ToDos are spawning here==-->
+    </div>
+    <nav id="main-nav">
+        <div id="main-nav-add">&plus;</div>
+        <div id="main-nav-rmv">&minus;</div>
+    </nav>
+</section>
+<section id="form">
+    <div id="form-content">
+        <div id="form-header">
+            <h2>Add new Task</h2>
+        </div>
+        <form id="form-body">
+            <label hidden for="task-name">task name</label>
+            <input type="text" maxlength="70" id="task-name" name="task-name" placeholder="Task name"/><br>
+            <label hidden for="task-description">task description</label>
+            <textarea name="task-description" id="task-description" cols="40" rows="4" placeholder="Task description"></textarea><br>
+            <label hidden for="due-date" >task due date</label>
+            <span hidden id="date-format">DD-MM-YYYY</span>
+            <input  type="date" aria-describedby="date-format" id="due-date" min="2022-01-01"/>
+        </form>
+        <div id="form-buttons">
+            <div id="cancel-button"><p>Cancel</p></div>
+            <div id="submit-button"><p>Submit</p></div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

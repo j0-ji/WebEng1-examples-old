@@ -1,0 +1,65 @@
+.point-out {
+    --po: 0px;
+    --bc: #F6E8CD;          /* #FFFADF ; #D8CDB8 */
+    --fw: bold;
+}
+
+.no-point-out {
+    --po: 10px;
+    --bc: #D8CDB8;
+    --fw: none;
+}
+
+#content-gc > *{
+    margin: var(--po);
+    background-color: var(--bc);
+    transition: margin, background-color .3s;
+}
+
+/*grid container and items*/
+#content-gc {
+    /*manages the arrangement of the watch-blocks*/
+    /*grid-main*/
+    display: grid;
+    grid-auto-rows: minmax(500px, auto);
+    grid-template-columns: repeat( auto-fit, minmax( min( 100%, 360px ), 1fr ));
+    /*grid-style*/
+    grid-gap: 30px;
+    justify-content: left;
+    padding: 50px;
+}
+
+.watch-gc {
+    /*manages the arrangement inside the watch blocks*/
+    display: grid;
+    grid-template-rows: 300px 50px minmax( 150px, auto );
+    transition: margin .3s;
+}
+
+/*styles*/
+.watch-img {
+    height: 280px;
+    width: 280px;
+    display: block;
+    margin: 10px auto 10px auto;
+}
+
+.watch-name {
+    width: 80%;
+    display: block;
+    margin: 10px auto 10px auto;
+    /*name txt config*/
+    font-size: 2em;
+    font-weight: var(--fw);
+    text-align: center;
+}
+
+.watch-description {
+    width: 85%;
+    display: block;
+    margin: 10px auto 10px auto;
+    /*description txt config*/
+    font-size: 1.2em;
+    font-weight: var(--fw);
+    text-align: justify;
+}

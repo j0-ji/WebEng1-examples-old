@@ -1,0 +1,43 @@
+/*grid container and items*/
+.content-gc {
+    /*manages the arrangement of the profile-blocks*/
+    /*grid-main*/
+    display: grid;
+    grid-auto-rows: minmax( 150px, auto );
+    grid-template-columns: repeat( 1, minmax( min( 100%, 900px ), 900px ));
+    /*grid-style*/
+    grid-gap: 30px;
+    justify-content: left;
+    padding: 50px;
+}
+
+.profile-c {
+    /*this is the profile container - containing pfp and the description*/
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.pfp {
+    display: block;
+    margin: auto;
+}
+
+.person-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.txt {
+    align-self: stretch;
+    font-size: 1.2em;
+    text-align: justify;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 400px;
+
+    padding: 10px 30px 10px 30px;
+}
+

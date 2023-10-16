@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Simplifica, sans-serif;
+}
+
+#main {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#main-nav {
+    display: grid;
+    grid-template-rows: repeat(3, 25px);
+    grid-gap: 15px;
+}
+
+#main-nav > div {
+    height: 25px;
+    width: 25px;
+
+}
+
+#main-nav-add, #main-nav-fav, #main-nav-rmv {
+    background-color: #BB86FC;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-nav-add:is(:hover, :focus), #main-nav-fav:is(:hover, :focus), #main-nav-rmv:is(:hover, :focus) {
+    cursor: pointer;
+    background-color: #AA75EB;
+}
+
+.pointOut {
+    background-color: cyan;
+}
+
+.selected {
+    background-color: orange;
+}
+
+/*
+.taskComplete {
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    border-radius: 50%;
+}
+*/

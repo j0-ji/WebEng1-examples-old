@@ -1,0 +1,26 @@
+/*
+configuring some tags +
+CSS-config of the main grid-container used by index.html and every subpage
+*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Simplifica, Arial, sans-serif;
+}
+
+p, h4, h3, h2, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/*!!!!*/
+.main-gc {
+    display: grid;
+    width: 100%;
+}
+/*function not known...*/
+
+

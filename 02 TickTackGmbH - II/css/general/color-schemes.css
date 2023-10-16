@@ -1,0 +1,44 @@
+/*TAGS*/
+body, html {
+    background-color: white;
+    color: black;
+}
+
+/*HEADER*/
+.header-gc {
+    background-color: black;
+}
+
+.brand-name > * {
+    color: white;
+}
+
+/*NAVIGATION*/
+.nav-gc {
+    background-color: black;
+}
+
+.button-current {
+    background-color: white;
+    color: black;
+}
+
+.button {
+    background-color: black;
+    color: white;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+/*WATCHES*/
+.watch-gc {
+    background-color: #F6E8CD;
+}
+
+/*coworker*/
+.profile-c {
+    background-color: #F6E8CD;
+}

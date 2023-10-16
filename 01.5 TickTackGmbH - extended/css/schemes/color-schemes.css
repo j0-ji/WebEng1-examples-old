@@ -1,0 +1,99 @@
+/* ROOT */
+:root {
+    --transition-time: .3s;
+    --transition-time-dd-to-grey: .25s;
+    --transition-time-dd-to-white: .2s;
+}
+
+.mainTheme {
+    --primary-color: #fff;          /* #fff     - white */
+    --secondary-color: #000;        /* #000     - black */
+    --tertiary-color: #F6E8CD;      /* #F6E8CD  - beige */
+    --quaternary-color: #F2F2F2;    /* #F2F2F2  - grey  */
+
+    --primary-txt-color: #111;
+    --secondary-txt-color: #eee;
+}
+
+.sophisticated {
+    --primary-color: #938E93;
+    --secondary-color: #5D5C61;
+    --tertiary-color: #7395AE;
+    --quaternary-color: #B0A295;
+
+    --primary-txt-color: #eee;
+    --secondary-txt-color: #111;
+}
+
+.eyeCancer {
+    --primary-color: orange;
+    --secondary-color: cyan;
+    --tertiary-color: magenta;
+    --quaternary-color: #F2F2F2;
+
+    --primary-txt-color: cyan;
+    --secondary-txt-color: orange;
+}
+
+/* TAGS */
+body, html {
+    background-color: var(--primary-color, white);
+    color: var(--primary-txt-color, black);
+}
+
+/* HEADER */
+.header-gc {
+    background-color: var(--secondary-color, black);
+}
+
+.brand-name > * {
+    color: var(--secondary-txt-color, white);
+}
+
+/* NAVIGATION */
+.nav-gc {
+    background-color: var(--secondary-color, black);
+}
+
+.button-current {
+    background-color: var(--primary-color, white);
+    color: var(--primary-txt-color, black);
+}
+
+.button {
+    background-color: var(--secondary-color, black);
+    color: var(--secondary-txt-color, white);
+    transition: var(--transition-time);
+}
+
+.button:hover {
+    background-color: var(--primary-color, white);
+    color: var(--primary-txt-color, black);
+    transition: var(--transition-time);
+}
+
+
+/* WATCHES */
+.watch-gc {
+    background-color: var(--tertiary-color, #F6E8CD);
+}
+
+/* COWORKER */
+.profile-c {
+    background-color: var(--tertiary-color, #F6E8CD);
+}
+
+/* BETA-STUFF */
+.dropdown-content {
+    background-color: var(--primary-color, white);
+}
+
+.dropdown-content div {
+    color: var(--primary-txt-color, black);
+    transition: var(--transition-time-dd-to-white)
+}
+
+.dropdown-content div:hover {
+    background-color: var(--quaternary-color, lightgrey);
+    transition: var(--transition-time-dd-to-grey);
+}

@@ -1,0 +1,26 @@
+/*LAYOUT*/
+/*grid-container (gc) and grid-items (gi)*/
+
+.header-gc {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 80px 260px;
+    grid-template-rows: 80px;
+
+    grid-gap: 40px;
+    padding: 10px 50px 10px 50px;
+}
+
+/*HEADER-CONTENT*/
+/*logo*/
+.logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+/*brand-name*/
+.brand-name > * {
+    font-size: 50px;
+    margin: 10px 0 0 0;
+}

@@ -1,0 +1,10 @@
+/* variables for round/sharp corners of menus and other divs */
+.cornersRound {
+    --br: 10px; /* with border-radius */
+    --nbr: 0px; /* without broder-radius */
+}
+
+.cornersSharp {
+    --br: 0px;  /* without border-radius */
+    --nbr: 0px; /* without broder-radius */
+}

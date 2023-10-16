@@ -1,0 +1,39 @@
+/*LAYOUT*/
+/*grid-container (gc) and grid-items (gi)*/
+nav {
+    position: sticky;
+    top: 0;
+}
+
+.nav-gc {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat( auto-fit, min( 50%, 250px ));
+    /*
+    the max value of 50% should get adapted, depending on the count of
+    nav buttons. How to get the right percentage: 100/countOfNavElements
+    Could probably get automated with js.
+    */
+    padding: 5px 50px 0 50px;
+}
+
+.nav-gi {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    height: 50px;
+}
+
+.button-current {
+    text-decoration: none;
+}
+
+.button {
+    text-decoration: none;
+}
+
+.button:hover {
+    text-decoration: none;
+}
+

@@ -1,0 +1,55 @@
+/*grid container and items*/
+.content-gc {
+    /*manages the arrangement of the watch-blocks*/
+    /*grid-main*/
+    display: grid;
+    grid-auto-rows: minmax(500px, auto);
+    grid-template-columns: repeat( auto-fit, minmax( min( 100%, 360px ), 1fr ));
+    /*grid-style*/
+    grid-gap: 30px;
+    justify-content: left;
+    padding: 50px;
+}
+
+.watch-gc {
+    /*manages the arrangement inside the watch blocks*/
+    display: grid;
+    grid-template-rows: 300px 50px minmax( 150px, auto );
+    border-radius: var(--br);
+    transition: border-radius .3s;
+}
+
+/*styles*/
+.watch-img {
+    height: 280px;
+    width: 280px;
+    display: block;
+    margin: 10px auto 10px auto;
+    transition: .25s;
+}
+
+.watch-img:hover {
+    heigth: 290px;
+    width: 290px;
+    display: block;
+    margin: 5px auto 5px auto;
+    transition: .25s;
+}
+
+.watch-name {
+    width: 80%;
+    display: block;
+    margin: 10px auto 10px auto;
+    /*name txt config*/
+    font-size: 2em;
+    text-align: center;
+}
+
+.watch-description {
+    width: 85%;
+    display: block;
+    margin: 10px auto 10px auto;
+    /*description txt config*/
+    font-size: 1.2em;
+    text-align: justify;
+}

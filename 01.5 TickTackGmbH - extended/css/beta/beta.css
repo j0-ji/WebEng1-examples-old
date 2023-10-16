@@ -1,0 +1,66 @@
+/* NAVIGATION - BETA-BUTTON - STYLE */
+:root {
+    --transition-time: .3s;
+}
+
+.dropdown {
+    cursor: pointer;
+    position: relative;
+}
+/* BUTTON WITH IMGs */
+.base-img {
+    display: block;
+}
+
+.top-img {
+    position: absolute;
+    opacity: 0;
+    transition: opacity var(--transition-time);
+}
+
+.dropdown:hover > .top-img {
+    opacity: 1;
+    transition: opacity var(--transition-time);
+}
+
+.dropdown:hover > .base-img {
+    opacity: 0;
+}
+/* *END* BUTTON WITH IMGs*/
+
+/* ACTUAL DROPDOWN + DROPDOWN CONTENT */
+.dropdown-content {
+    display: none;
+    /* position correction; dropdown-content was above beta-btn */
+    position: absolute;
+    top: 50px;
+
+    /* bring the content on a higher lvl as the "base-page" */
+    z-index: 1;
+
+    width: min(100%, 250px);
+
+    transition: var(--transition-time);
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    transition: display var(--transition-time);
+}
+
+.dropdown-element /* fi = flex-item */ {
+    height: 50px;
+    margin: 0 auto 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+}
+
+.dropdown-element > p {
+    /* removing the f****** margin above and below p-tags :) */
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}

@@ -1,0 +1,6 @@
+DOMTask         - create DOM-elements for tasks
+Task            - class for task-info
+TaskHandler     - manages functionality of Tasks (save tasks, get tasks from save)
+
+FormHandler     - manages functionality of form
+

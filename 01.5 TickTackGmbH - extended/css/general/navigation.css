@@ -1,0 +1,77 @@
+/* DESIGN */
+/* https://stackoverflow.com/questions/43707076/how-does-the-position-sticky-property-work?page=1&tab=scoredesc#tab-top */
+/* why it's needed to use 'top' so the nav-bar is actually sticky */
+nav {
+    position: sticky;
+    top: 0;
+}
+
+.nav-gc {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat( auto-fit, min( 33%, 250px ));
+    /*
+    <==!!- CHANGE VALUE WHEN CHANGING NUMBER OF NAV-BUTTONS -!!==>
+    the max value of 33% should get adapted, depending on the count of
+    nav buttons. How to get the right percentage: 100/countOfNavElements
+    Could probably get automated with js.
+    */
+    padding: 0px 50px 0 50px;
+}
+
+.nav-gi {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    height: 50px;
+}
+
+/* everything for current button */
+.button-current {
+    text-decoration: none;
+    border-top-left-radius: var(--br);
+    border-top-right-radius: var(--br);
+    transition: var(--transition-time);
+}
+
+/* how to enable ":has()" on Chrome (no other browser [except safari] supported now */
+/* https://blog.logrocket.com/how-when-use-css-has-selector/ */
+/* how to use ":has()": https://stackoverflow.com/questions/12574668/change-color-of-sibling-elements-on-hover-using-css */
+/* if an adjacent button is hovered -> take away one of the two br from current-page-button */
+.button-current:has(+ .button-right:hover) {
+    border-top-right-radius: var(--nbr);
+    transition: var(--transition-time);
+}
+
+.button-left:hover + .button-current {
+    border-top-left-radius: var(--nbr);
+    transition: var(--transition-time);
+}
+
+/* everything for other buttons */
+.button {
+    text-decoration: none;
+}
+
+.button:hover {
+    text-decoration: none;
+    border-top-left-radius: var(--br);
+    border-top-right-radius: var(--br);
+}
+
+/* left/right describes the button relative to the current-page-button (button-current) */
+.button-left:hover {
+    border-top-right-radius: var(--nbr);
+}
+
+.button-right:hover {
+    border-top-left-radius: var(--nbr);
+}
+
+/* round corners for drop-down-menu */
+.dropdown-content, .design-switch {
+    border-bottom-left-radius: var(--br);
+    border-bottom-right-radius: var(--br);
+    transition: var(--transition-time);
+}

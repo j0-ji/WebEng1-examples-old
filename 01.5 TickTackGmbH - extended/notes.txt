@@ -1,0 +1,14 @@
+v0.2.2 [git] - problem with BETA-buttons:
+    - theme is getting applied accordingly to saved values
+    - button reset -> button not set to read value (from save)
+    - even though theme is set to 'sophisticated', button says 'main'
+        -> theme after 'sophisticated' is 'eye-cancer' and not main again...
+
+
+for design.js:
+needed methods for 'Theme'- & 'Design'-classes:
+
+    - get values from storage
+        - put instantly into this.currentTheme?
+
+    - set value (num) to storage

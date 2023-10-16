@@ -1,0 +1,16 @@
+Notes:
+
+- init -> LOOP (3-5 times): NEW_BUBBLE_FUNCTION();
+
+- setIntervall( *NEW_BUBBLE_FUNCTION()* , RANDOM_TIME );            // RANDOM_TIME miliseconds between 3.5s and 7s
+
+- BUBBLES: variable SIZE, TRANSPARENCY, COLOR
+    - maybe make class with these attributes
+    - everytime a bubble is spawned, an object is instantiated with randomized attributes
+
+- Somehow get an onClick event on the bubble, so it can be 'destroyed'
+
+- Graphical Objects -> CSS; no Canvas
+
+
+get time tree !!!!

@@ -1,0 +1,30 @@
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: min(100%, 250px);
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.15);
+    z-index: 1;
+}
+
+.dropdown-content div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    height: 50px;
+    /* also changed color to black; location: "color-schemes.css" */
+}
+
+.dropdown-content div:hover {
+    /* changed background-color on hover to light-grey; location: "color-schemes.css" */
+}
+
+/* NOTE: DROPDOWN-GRID - displayed when dropdown-div is hovered */
+.dropdown:hover .dropdown-gc {
+    display: block;
+    position: relative;
+    top: 75px;
+    width: min(100%, 250px);
+}
+
+/* NAVIGATION - BETA-BUTTON - FUNCTIONALITY */
